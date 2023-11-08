@@ -1,0 +1,146 @@
+.cartitem{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    object-fit: cover;
+}
+
+.card{
+    background-color: white;
+    object-fit: cover;
+    border-radius: 0.7em; 
+}
+.card img{
+    max-width: 21%;
+    border-radius: 0.7em; 
+}
+
+.pricedetails{
+    border-bottom: 2px solid silver;
+    >h4{
+    font-family: 'Raleway', sans-serif;
+    color:  rgb(19, 17, 17);
+   
+    }
+}
+
+.quant{
+   .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+   }
+   >span:nth-child(1){
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    margin-top: 1px;
+   }
+}
+.price{
+    >h3{
+        font-family: 'EB Garamond', serif;
+        color: rgba(53, 71, 51, 1);
+        font-size: 20px;
+    }
+    >p{
+        font-family: 'Lato', sans-serif;
+        font-size: 15px
+
+    }
+}
+
+._23FHuj {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff,#f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: point;
+    border-radius: 50%;;
+}
+._26HdzL {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 60px);
+    height: 100%;
+    width: 32px;
+    height: 28px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    margin: 0 5px;
+}
+
+
+
+
+.buy-btn{
+    background-color:  rgba(53, 71, 51, 1);
+    border: none;
+    color: white;
+}
+.buy-btn:hover{
+    background-color:  silver;
+}
+
+.free-shipping{
+            font-family: 'Raleway', sans-serif;
+            color:  rgb(19, 17, 17);
+            font-size: 13px;
+            margin-bottom: 0px;
+        
+}
+.subtotaldet span{
+            font-family: 'Raleway', sans-serif;
+            color:  rgb(19, 17, 17);
+            font-size: 13px;
+}
+
+/* emptycartimage */
+#eachcartitems{
+    display: block;
+}
+#emptycart{
+    display: none;
+}
+#buypart{
+    display: block;
+}
+
+#carthead{
+    font-family: 'EB Garamond', serif;
+    color: rgba(53, 71, 51, 1);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+}
+
+/* Modal */
+.buymodal{
+    font-family: 'Inter', sans-serif;
+}
+
+.confirmation-btn{
+    background-color:rgba(53, 71, 51, 1);
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 0px;
+    width: 140px;
+    height: 45px;
+}
+.confirmbuymodal{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+
+
+

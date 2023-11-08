@@ -1,0 +1,42 @@
+.map{
+          
+     
+       
+        >div{
+            
+           
+            >div >img{
+            object-fit: fill;
+            height: 400px;
+            width: 600px;
+            }
+        } 
+    
+}
+.contact-page{
+    background-color: rgba(240, 241, 238, 1);
+}
+.head{
+    >h1{
+        font-family: 'EB Garamond', serif;
+        color: rgba(53, 71, 51, 1);
+        font-size: 50px;
+    }
+    >p{
+        font-family: 'Raleway', sans-serif;
+        color:  rgba(128, 130, 118, 1);
+        font-size: 12px;
+    }
+}
+
+#login{
+    background-color: rgba(53, 71, 51, 1);
+    border: none;
+}
+
+#login:hover{
+    background-color: #28a745;
+}
+
+
+

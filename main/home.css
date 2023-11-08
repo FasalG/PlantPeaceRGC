@@ -1,0 +1,465 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    
+}
+
+/*Navigation Bar*/
+
+
+.navbar{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* padding: 20px 65px */
+}
+
+.brandname{
+   
+    >img{
+        width: 34px;
+        height: 27px;
+        margin-right: 4px;
+    }
+    >h5{
+        font-family: 'Oswald', sans-serif;;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        
+    }
+}
+
+
+.bag{
+    >img{
+        width: 20px;
+        height: 20px;
+    }
+    >span{
+       font-size: 13px;
+    }
+}
+.nav-link{
+    font-size: 14px;
+    
+}
+
+.nav-link:hover{
+    text-decoration: none;
+}
+.material-symbols-outlined{
+    text-decoration: none;
+    color: black;
+}
+.dropdown{
+    display: none;
+}
+
+
+
+
+
+/* introduction part */
+.inro{
+    width: 100%;
+    
+
+}
+.introcont{
+    padding-top: 106px;
+}
+
+
+.leftside{  
+    
+    >div >p{
+        margin-left: 17px;
+        font-family: 'Pacifico', cursive;
+       
+        }
+    div >img{
+        height: 3px;
+        width: 17px;
+    }    
+    }
+.heading{
+    >h1{
+        font-family: 'EB Garamond', serif;
+        color: rgba(53, 71, 51, 1);
+        font-size: 50px;
+    }
+    >p{
+        font-family: 'Raleway', sans-serif;
+        color:  rgba(128, 130, 118, 1);
+        font-size: 12px;
+    }
+}
+
+.introimg{    
+      
+        >img{
+            object-fit: cover;
+            /*  width: 100%; */
+             /* height: 100%; */
+            filter: grayscale(100%); /* Set to 100% for full black and white effect */
+            /* margin-top: -73px; */
+        }
+
+    }
+    .introimg img:hover{
+        filter: none;
+    }
+.shopnow-btn{
+    background-color:rgba(53, 71, 51, 1);
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 0px;
+    width: 140px;
+    height: 45px;
+}
+
+/* Take care of plants */
+
+
+.mainheading{
+        >h1{
+            font-family: 'EB Garamond', serif;
+            color: rgba(53, 71, 51, 1);
+            font-size: 48px;
+           
+        }
+        >p{
+            font-family: 'Raleway', sans-serif;
+            color:  rgba(128, 130, 118, 1);
+            font-size: 12px;
+            
+        }
+    }
+
+    .card{
+        border: none;
+    }
+
+    .card-body{
+        >h5{
+            font-family: 'Lato', sans-serif;
+            color: black;
+            font-size: 20px;
+           
+        }
+        >p{
+            font-family: 'Raleway', sans-serif;
+            color:  rgba(128, 130, 118, 1);
+            font-size: 13px;
+            
+        }
+    }
+
+    .para{
+        
+            font-family: 'Raleway', sans-serif;
+            color:  rgba(128, 130, 118, 1);
+            font-size: 13px;
+            
+        
+        }
+
+        /* Sliders */
+
+.plantname{
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    
+}
+
+.price{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+   
+}
+.card{
+    border: none;
+}
+.addtocart-btn{
+    border-color: rgb(148, 136, 136);
+    color: rgb(148, 136, 136);
+    border-radius: 24px;
+    font-size: 13px;
+    background-color: rgb(243, 241, 241);
+}
+.addtocart-btn:hover{
+    border-color: rgb(148, 136, 136);
+    background-color: rgb(243, 241, 241);
+}
+
+
+.imagediv{
+        width: 100%; /* Set the width of the container to 100% */
+        height: 70%; /* Set the height of the container to 100% */
+        overflow: hidden;
+        align-items: center;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        >img{
+            height: 100%;
+            width: 100%;
+             /* Set the image height to 100% of the container */
+            /* object-fit: cover; */
+            /* Ensure the image covers the entire container, potentially cropping it */
+          
+
+        }
+    }
+
+.plantcard{
+        height: 380px;
+        width: 258px;    
+    
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        overflow: hidden; /* Hide any image overflow */
+}
+
+    
+
+.plantcard:hover{
+    
+        transform: perspective(1000px) rotateX(1deg) rotateY(1deg);
+        box-shadow: 20px rgba(0, 0, 0, 0.4);
+    
+    .addtocart-btn{
+        border-color: black;
+        color: black;
+    }
+}
+
+
+
+/* .owl-nav{
+    display: none;
+}   */
+
+/* Trending catagories */
+
+.straight-line{
+    margin-left: 32px;
+}
+
+.eachcatagories{
+    border-top: 1px solid #000; /* 2px solid black line */
+    border-bottom: 1px solid black;
+    margin-top: 20px; /* Adjust the margin as needed */
+
+    
+    color: rgba(138, 155, 110, 1);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    
+}
+
+.horizontal{
+    >h6{
+        margin: 0px;
+    }
+}
+
+.icon{
+    color:  rgba(138, 155, 110, 1);
+
+}
+.horizontal{
+    >h6{
+        font-size: 18px;
+    }
+}
+.horizontal:hover{
+    .icon{
+        color:  black;
+    }
+    >h6{
+        color: black;
+        
+    }
+}
+
+/* News Letter */
+
+.bg{
+    background-image: url("images/newsletter/unsplash_VTXw4_5SsNA.png");
+    background-size: cover;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+ 
+} 
+
+.trans{
+    background-color: rgba(138, 155, 110, 0.7);
+
+    
+}
+
+.form-control{
+    border-radius: 0px;
+   
+}
+.email-btn{
+    background-color:rgba(53, 71, 51, 1);
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+.email-btn:hover{
+    
+    transition: 5s;
+    border: 1px solid silver;
+}
+.contents{
+    >h1{
+        font-family: 'EB Garamond', serif;
+        color: white;
+        font-size: 50px;
+        margin: 0px;
+       
+    }
+    >p{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 12px;
+        line-height: 24px;
+        
+    }
+}
+.form{
+    height: 52px;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color:rgba(53, 71, 51, 1);
+    background-image: url("images/newsletter/Group\ 30799.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+
+}
+.stay{
+    margin-top: 100px;
+    >h1{
+        font-family: 'EB Garamond', serif;
+        color: white;        
+    }
+    >span{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 10px;
+    }
+}
+.ul{
+    padding-left: 0px;
+    list-style: none;
+    >li >a{
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 10px;
+        
+
+    }
+}
+.links{
+    margin-top: 100px;
+    >h4{
+        color: white;
+        font-size: 18px;
+
+    }
+}
+.footer2{
+    /* margin-top: 50px; */
+    padding-top: 20px;
+    border-top: 1px solid white;
+    
+}
+.copyrights{
+    >span{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 10px;
+    }
+}
+.plant{
+  
+    >h5{
+        font-family: 'Oswald', sans-serif;;
+        color: white;
+        margin-top: 14px;
+    }
+    >img{
+        height: 36px;
+        width: 26px;
+    }
+}
+
+
+
+/* Image hover animation effect for three images part */
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform 2.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-text {
+    font-family: 'Raleway', sans-serif;
+    color:  rgba(128, 130, 118, 1);
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    /* bottom: 50px; */
+    left: 0;
+    right: 0;
+    top: 160px;
+    /* background: white; */
+    color: black;
+    padding: 1px;
+    max-height: 0;
+    transition: transform 2.3s ease, max-height 2.3s ease, opacity 2.3s ease;
+    opacity: 0;
+}
+
+.image-container:hover img {
+    transform: scale(1,0.4) translate(0%,-100%);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover .image-text {
+    display: block;
+    max-height: 70%; /* Adjust the desired max height */
+    transform: translateY(0);
+    opacity: 1;
+    
+}

@@ -1,0 +1,49 @@
+.registerform{
+    width: 550px;
+}
+
+.alreadyaccount{
+  
+    
+    >span{
+        font-family: 'Raleway', sans-serif;
+        color:  rgba(128, 130, 118, 1);
+        font-size: 15px;
+    }
+}
+.dataprivacy{
+    >span{
+        font-family: 'Raleway', sans-serif;
+        color:  rgba(128, 130, 118, 1);
+        font-size: 12px;
+        
+    }
+    }
+.chekbox{
+    >span{
+        font-family: 'Raleway', sans-serif;
+        color:  rgba(128, 130, 118, 1);
+        font-size: 14px;
+}
+
+
+}
+.head{
+    >h1{
+        font-size: 30px;
+        font-weight: 900;
+        font-family: 'Raleway', sans-serif;
+        color:rgba(53, 71, 51, 1);
+        ;
+    }
+}
+
+#register{
+    background-color: rgba(53, 71, 51, 1);
+    border: none;
+}
+
+#register:hover{
+    background-color: #28a745
+}
+

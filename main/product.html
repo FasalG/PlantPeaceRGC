@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Owl carousal min.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- owl carosal. theme css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- CSS -->
+     <link rel="stylesheet" href="product.css">
+     <link rel="stylesheet" href="home.css">
+     <!-- <link rel="stylesheet" href="cart.css"> -->
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Lato:wght@700&family=Oswald:wght@500&family=Pacifico&family=Raleway:wght@300&display=swap" rel="stylesheet">
+ 
+     <!-- googleicons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!-- UIkit CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.6/dist/css/uikit.min.css" />
+     <!-- Sweetalert css -->
+   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+</head>
+</head>
+<body>
+     <!-- Navigation bar -->
+    
+     <div class="navbar row d-flex mx-0 px-5 py-4 ">
+        <div class="row d-flex mx-0 px-4">
+            <div class="brandname d-flex align-items-baseline col-4 px-0">
+                <img src="images/Group 25.png" alt="">
+                <h5>PlantPeace</h5>
+            </div>
+            <div class="col-4 d-flex pt-1 pe-5 justify-content-center"> 
+                <div class="col-4 d-flex  pe-5 justify-content-center">   
+                    <div class="me-4 ">                
+                        <a class="nav-link" href="home.html">Home</a>
+                    </div> 
+                    <div class="me-4">                
+                        <a class="nav-link" style="color: silver;" href="product.html">Product</a>
+                    </div> 
+                    <div >                
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end col-4 px-0">
+                <div class="bag pe-3">
+                    <a href="Cart.html"><img src="images/bag-2.png"></a>
+                    <span id="cartcount"></span>
+                </div>
+                <div class="pe-3">
+                    <span><a href="#" style="color: black;" class="nav-link" id="logintext"></a></span>
+                </div>
+                <div class="user">
+                    <img src="images/user.png">
+                </div>         
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Product -->
+
+<div class="product row col-12 container-fluid d-flex align-items-start justify-content-center px-3 py-5">
+    <div class="product-img col-6 pb-5 d-flex flex-column align-items-center justify-content-center">
+        <div class="main-img">
+            <img src="images/Sliders/Photo.png" id="main-image">
+        </div>
+        <div class="sub-img d-flex justify-content-center">
+            <div class="col-2 p-2 pt-5">
+                <img src="images/Sliders/Photo (1).png" id="img-1" class="smallimg">
+            </div>
+            <div class="col-2 p-2 pt-5">
+                <img src="images/Sliders/Photo (2).jpg" id="img-2" class="smallimg">
+            </div>
+            <div class="col-2 p-2 pt-5">
+                <img src="images/Sliders/Photo(0).png" id="img-3" class="smallimg">
+            </div>            
+        </div>
+    </div>
+    <div class="product-details col-6 ps-5">
+        <div class="product-name">
+            <h1 class="m-0" id="plantname">Echinocereus Cactus</h1>
+            <span> A Majestic Addition to Your Plant Collection</span>
+        </div>
+        <div class="check-out">
+            <div class="d-flex tags">
+                <button class="btn me-2 my-2">indoor</button>
+                <button class="btn me-2 my-2">Cactus</button>
+            </div>
+            <div class="price">
+                <span id="price">$139.99</span>
+            </div>
+            <div class="checkout-btn my-3 d-flex">
+                <button type="button" class="btn btn-lg me-2" id="checkout"  data-bs-toggle="modal" data-bs-target="#delivery">Check out</button>
+                <button type="button" class="btn btn-lg me-2" id="addtocart" >Add to cart</button>
+                <button type="button" class="btn btn-lg me-2" id="gotocart" onclick="cartpage()">Go to Cart</button>
+            </div>
+<!-- Modal : Proceed to buy-->
+<div class="modal fade" id="delivery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-5 buymodal">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel" style="font-family: 'Inter', sans-serif;">Confirm Delivery</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column">
+          <span class="fs-6 fw-bold pb-2">Delivery Address</span>
+          <textarea id="myTextarea" rows="4" cols="50"></textarea>
+          <span class="fs-6 fw-bold py-3">Payment option</span>
+          <div class="pb-3 ps-4">
+            <input type="radio" id="Cash" name="paymentMethod">
+            <label class="fs-5" for="Cash">Cash on delivery</label>
+          </div>
+          <div class="pb-3 ps-4">
+            <input type="radio" id="Credit" name="paymentMethod" >
+            <label class="fs-5" for="Credit">Credit/Debit card payment</label>
+          </div>        
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="confirmation-btn btn btn-lg" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="confirmation-btn btn btn-lg" data-bs-toggle="modal" data-bs-target="#confirmbuy" id="confirmbtn" disabled >Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Modal : confirm buy-->
+  <div class="modal fade" id="confirmbuy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-5 confirmbuymodal">
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+          <img src="images/Group 30787.png">
+          <span class="fw-bolder">Success!</span>
+          <h3 class="text-center" style=" color: rgba(175, 178, 170, 1);">Your order has been placed successfully!</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal done -->
+
+
+            <div class="features">
+                <h5 class="my-0">Features</h5>
+                <ul>
+                    <li>Species: Echinocereus spp.</li>
+                    <li>Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height.</li>
+                    <li>Blooming Season: Typically spring or summer, with flowers lasting several days to weeks.</li>
+                    <li>Pot Size: Available in various pot sizes to suit your preference and needs.</li>
+                    <li>Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.</li>
+                </ul>
+            </div>
+            <div class="description">
+                <h5 class="my-0">Description</h5>
+                <p>Ladyfinger cactus (*Echinocereus pentalophus*) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.</p>
+            </div>
+        </div>
+        <div class="p-2" style="background-color: rgba(221, 222, 160, 1);">
+            <div class="product p-1" data-bs-toggle="collapse" href="#sunlight" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <h5 class="text-center my-0"><img src="images/Product/download 1.png">Sunlight</h5> 
+            </div>
+            <div class="collapse" id="sunlight">
+                <div class="card card-body p-0 px-3" style="background-color: rgba(221, 222, 160, 1);">
+                     <p style="color: black;">To ensure flowering.make certain that plants receive full sunlight atleasrt 6-8 hrs per day</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-2 mt-2" style="background-color: rgba(221, 222, 160, 1);">
+            <div class="product p-1" data-bs-toggle="collapse" href="#soil" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <h5 class="text-center my-0"><img src="images/Product/icon_Soil@2x 1.png">Soil</h5>
+            </div>
+            <div class="collapse" id="soil">
+                <div class="card card-body p-0 px-3" style="background-color: rgba(221, 222, 160, 1);">
+                     <p style="color: black;">Plant teh cactus in well draining soil and weter only when necessary</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Sliders -->
+    <div style="background-color: rgba(240, 241, 238, 1)">
+        <div class="container-fluid align-items-center justify-content-center px-5 py-3">
+            <div class="mainheading container-fluid text-center">
+                <h1 class="my-0">Related Products</h1>
+            </div> 
+        </div>   
+        <div class="p-5">
+            <div class="owl-carousel owl-theme px-5" id="main">
+                <!-- <div class="item me-4">
+                    <div class="plantcard card">
+                        <div class="imagediv">
+                        <img src="images/Sliders/Photo.png" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="plantname">Echinocereus Cactus</h3>
+                            <p class="price">$15.00&nbsp&nbsp <span class="og-rate"><del>$35.00</del></span></p>
+                            <button type="button" class="addtocart-btn btn btn-sm">Add to cart</button>
+                        </div>
+                    </div>
+                </div>            -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+<div class="footer p-5">
+    <div class="row col-12 mx-0">
+        <div class=" stay col-12 col-sm-6 ">
+            <h1>Stay Fresh</h1>
+            <span>plantpure@gmail.com</span><br>
+            <span>+977 88374637</span>
+        </div>
+        <div class="col-12 col-sm-6 d-flex justify-content-end p-0">
+            <div class="links col-6 col-sm-3">
+                <h4>Social Links</h4>
+                <ul class="ul">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="links col-6 col-sm-3">
+                <h4>Quick Access</h4>
+                <ul class="ul">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer2 row col-12 mx-0 mt-sm-5 mt-0">
+        <div class="plant col-12 col-sm-6 d-flex justify-content-sm-start justify-content-center">
+            <img src="images/Group 25.png" alt="">
+            <h5>PlantPeace</h5>
+        </div>
+        <div class="copyrights col-12 col-sm-6 text-sm-end text-center">
+            <span>Copyrights. All rights reserved.</span>
+        </div>
+    </div>
+</div>
+      
+    
+     <!-- jqyerry cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- Owl carousol CDN  min.js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- JS and bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <!-- JS local -->
+     <script src="product.js"></script>
+     
+     <!-- UIkit JS -->
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.6/dist/js/uikit.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.6/dist/js/uikit-icons.min.js"></script>
+       <!-- Sweetalert -->
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+</body>
+</html>
